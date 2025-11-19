@@ -354,12 +354,3 @@ If something doesn’t work:
 4. Contact your system administrator
 
 ---
-
-If you'd like, I can also:
-
-✅ Add badges (C#, SQL Server, .NET, etc.)
-✅ Add screenshots of your UI
-✅ Add installation GIF/steps
-✅ Add a short “About the project” section
-
-Just tell me!
