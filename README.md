@@ -1,168 +1,80 @@
-<p align="center"><img src="https://via.placeholder.com/1200x300.png?text=DVLD+System+%7C+Driver+%26+Vehicle+Licensing+Department" /></p>
-<br>
-<p align="center"><img src="https://via.placeholder.com/180x180.png?text=DVLD+Logo" width="150" /><br><b>DVLD – Driver & Vehicle Licensing Department System</b></p>
-<p align="center"> <img src="https://img.shields.io/badge/.NET_Framework-4.x-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Architecture-MultiLayer-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" /> <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge" /> </p>
-🎯 Overview
+# DVLD – Driver & Vehicle Licensing Department System
 
-The DVLD (Driver & Vehicle Licensing Department) System is a multi-layer .NET desktop application developed to automate driver licensing operations, including driver management, license issuance, renewals, exam scheduling, and administrative workflows.
+Welcome to the **DVLD Management System** — a complete multi-layer .NET application for managing driver licensing and vehicle-related services. This project provides end-to-end functionality for driver management, license issuance/renewal, exam scheduling, application workflows, and administrative reporting.
 
-The system is built using a clean 3-Tier Architecture:
+---
 
-🖥️ Presentation Layer (DVLD)
+## Table of Contents
+1. [Project Overview](#project-overview)  
+2. [Architecture](#architecture)  
+3. [Technology Stack](#technology-stack)  
+4. [Project Structure](#project-structure)  
+5. [Features](#features)  
+6. [Getting Started](#getting-started)  
+7. [Configuration](#configuration)  
+8. [Modules & Endpoints](#modules--endpoints)  
+9. [Authentication](#authentication)  
+10. [Database Setup](#database-setup)  
+11. [Services & Integrations](#services--integrations)  
+12. [Error Handling](#error-handling)  
+13. [Testing](#testing)  
+14. [Support](#support)
 
-⚙️ Business Logic Layer (DVLD_Business)
+---
 
-🗄️ Data Access Layer (DVLD_DataAccess)
+## Project Overview
 
-This ensures scalability, maintainability, and clear separation of responsibilities.
+This project is a full-featured Driver & Vehicle Licensing Management System that implements a **layered architecture** pattern, separating concerns into distinct layers for maintainability, testability, and scalability.
 
-🧱 Architecture
-┌──────────────────────────────┐
-│        Presentation Layer     │
-│            (DVLD)             │
-│  - WinForms UI                │
-│  - User Interaction           │
-└───────────────▲──────────────┘
-                │
-┌───────────────┴──────────────┐
-│      Business Logic Layer     │
-│       (DVLD_Business)         │
-│  - Validations                │
-│  - Workflows                  │
-│  - License Operations         │
-│  - Exam Logic                 │
-└───────────────▲──────────────┘
-                │
-┌───────────────┴──────────────┐
-│       Data Access Layer       │
-│     (DVLD_DataAccess)         │
-│  - SQL Queries / Stored Proc  │
-│  - CRUD Operations            │
-│  - Mapping Models             │
-└──────────────────────────────┘
+### Key Capabilities:
+- **Driver Management**: Create, update, search and maintain driver records and documents  
+- **License Management**: Issue, renew, replace and suspend licenses with category rules  
+- **Exam Scheduling**: Manage written & practical exams and record results  
+- **Application Workflow**: Submit, approve/reject, and track application lifecycle  
+- **Reporting**: View history, logs and administrative reports  
+- **Extensible Architecture**: Ready to be extended to Web API / Mobile frontends
 
-📂 Solution Structure
-DVLD.sln
-│
-├── DVLD/                    → Presentation Layer (UI)
-│   ├── Forms/
-│   ├── Controllers/
-│   └── Views/
-│
-├── DVLD_Business/           → Business Logic Layer
-│   ├── Services/
-│   ├── Managers/
-│   └── Models/
-│
-└── DVLD_DataAccess/         → Data Access Layer
-    ├── Repositories/
-    ├── Database/
-    └── Queries/
+---
 
-🚀 Features
-👤 Driver Management
+## Architecture
 
-Create, update, delete driver profiles
+The project follows **Clean / 3-Tier Architecture** principles with the following layers:
 
-Attach documents
+### Layer Structure:
 
-View complete driver history
+1. **DVLD (Presentation Layer)**  
+   - WinForms (or WPF) UI  
+   - Forms, dialogs and UI helpers  
+   - View models / UI controllers
 
-🪪 License Services
+2. **DVLD_Business (Business Layer)**  
+   - Business models and entities  
+   - Services and managers (DriverService, LicenseService, ExamService)  
+   - Validation and workflow rules
 
-Issue new licenses
+3. **DVLD_DataAccess (Data Layer)**  
+   - ADO.NET helpers / Repository-style classes  
+   - SQL queries and stored procedures  
+   - Database connection/configuration
 
-Renew, replace, or suspend licenses
+---
 
-Manage multiple license categories
+## Technology Stack
 
-Track expiration and validation
+### Core Technologies:
+- **.NET Framework 4.x** — Application framework  
+- **C#** — Language  
+- **WinForms / WPF (optional)** — Desktop UI  
+- **SQL Server** — Primary database  
+- **ADO.NET** — Data access layer
 
-📝 Exam Management
+### Optional / Future Tech (when converting to web):
+- **ASP.NET Core Web API** — expose functionality as RESTful services  
+- **Entity Framework Core** — ORM alternative to ADO.NET  
+- **Redis** — caching for fast temporary storage  
+- **JWT** — authentication for APIs
 
-Theory exam scheduling
+---
 
-Practical test workflow
+## Project Structure
 
-Auto-eligibility validation
-
-Record test results
-
-📑 Application Workflow
-
-Submit applications
-
-Approve or reject
-
-Track fees and progress
-
-🗄️ Data & Storage
-
-SQL Server backend
-
-ADO.NET data access
-
-Repository-style design
-
-🛠️ Technologies Used
-Category	Technology
-Language	C#
-Framework	.NET Framework 4.x
-UI	WinForms
-Architecture	3-Tier / Multi-Layer
-Database	SQL Server
-Data Access	ADO.NET
-🖼️ Screenshots
-
-(Replace with your actual images)
-
-<p align="center"> <img src="https://via.placeholder.com/700x350.png?text=Dashboard" /> </p> <p align="center"> <img src="https://via.placeholder.com/700x350.png?text=Driver+Management+Form" /> </p>
-📥 Installation Guide
-1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/DVLD.git
-
-2️⃣ Open the solution
-DVLD.sln
-
-3️⃣ Configure the database
-
-Create SQL Server database
-
-Run SQL scripts
-
-Update connection strings in:
-
-/DVLD/app.config
-/DVLD_DataAccess/app.config
-
-4️⃣ Build the project
-Build → Build Solution
-
-5️⃣ Run the application
-
-Press F5 (Set DVLD as Startup Project)
-
-📈 Future Enhancements
-
-🔹 ASP.NET Core Web API version
-
-🔹 JWT Authentication
-
-🔹 Modern UI (WPF or Web)
-
-🔹 Admin roles & permissions
-
-🔹 Reporting dashboard
-
-🔹 EF Core Migration
-
-🔹 Unit testing
-
-🤝 Contributing
-
-Pull requests are welcome!
-Feel free to open issues for bugs or feature requests.
-
-⭐ Support the Project
-
-If you like the project, please ⭐ star this repository.
