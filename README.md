@@ -78,3 +78,71 @@ The project follows **Clean / 3-Tier Architecture** principles with the followin
 
 ## Project Structure
 
+---
+
+## Features
+
+### 1. Driver Management
+- Add / update / delete driver profiles  
+- Attach & validate documents (ID, medical, proofs)  
+- Search by National ID, name, license number  
+- Driver history & audit trail
+
+### 2. License Management
+- Issue new licenses with unique license numbers  
+- Renew, replace, suspend, or revoke licenses  
+- Category-based validation (A, B, C, D, etc.)  
+- License expiry tracking & notifications (future)
+
+### 3. Exam Management
+- Schedule written & practical exams  
+- Register applicants for exams  
+- Record exam results and pass/fail logic  
+- Eligibility checks prior to scheduling
+
+### 4. Application Workflow
+- Submit application types: New, Renewal, Replacement  
+- Approve / Reject workflows with comments  
+- Fee calculation & status tracking
+
+### 5. Reporting & Admin
+- Generate lists: active licenses, expiring licenses, failed exams  
+- Basic export (CSV/Excel) for reports  
+- Audit logs for admin actions
+
+### 6. Data & Storage
+- SQL Server schema with normalized tables  
+- ADO.NET-based data access for predictable control
+
+---
+
+## Getting Started
+
+### Prerequisites
+- **Visual Studio 2019/2022** (or VS Code for parts)  
+- **.NET Framework Developer Pack (4.x)**  
+- **SQL Server** (LocalDB, Express or full)  
+- Optional: **Git**
+
+### Installation Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd DVLD
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <connectionStrings>
+    <add name="DVLDConnection"
+         connectionString="Server=YOUR_SERVER;Database=DVLD_DB;Trusted_Connection=True;MultipleActiveResultSets=True;"
+         providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
+  <appSettings>
+    <!-- Logging level, timeouts, etc. -->
+    <add key="DbCommandTimeout" value="60" />
+    <add key="AuditEnabled" value="true" />
+  </appSettings>
+</configuration>
+
+
