@@ -1,5 +1,8 @@
 DVLD – Driver & Vehicle Licensing Department System
 
+<p align="center"><img src="https://via.placeholder.com/180x180.png?text=DVLD+Logo" width="160" /><br><b>DVLD – Driver & Vehicle Licensing Department System</b></p>
+<p align="center"> <img src="https://img.shields.io/badge/.NET%20Framework-4.x-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Architecture-MultiLayer-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" /> <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge" /> </p>
+
 A complete multi-layer .NET application for managing drivers, licenses, exams, and administrative operations.
 
 <p align="center"> <img src="https://img.shields.io/badge/.NET%20Framework-4.x-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Architecture-MultiLayer-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" /> <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge" /> </p>
