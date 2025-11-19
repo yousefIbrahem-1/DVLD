@@ -1,148 +1,365 @@
-# DVLD – Driver & Vehicle Licensing Department System
+# DVLD – Driving & Vehicle Licensing System
 
-Welcome to the **DVLD Management System** — a complete multi-layer .NET application for managing driver licensing and vehicle-related services. This project provides end-to-end functionality for driver management, license issuance/renewal, exam scheduling, application workflows, and administrative reporting.
+Welcome to the **DVLD System** — a complete multi-layered C#/.NET application designed to manage all operations for a Driving & Vehicle Licensing Department.
+The system provides full functionality for applicant management, driving license creation, renewals, replacements, test management, and violation tracking.
 
 ---
 
 ## Table of Contents
-1. [Project Overview](#project-overview)  
-2. [Architecture](#architecture)  
-3. [Technology Stack](#technology-stack)  
-4. [Project Structure](#project-structure)  
-5. [Features](#features)  
-6. [Getting Started](#getting-started)  
-7. [Configuration](#configuration)  
-8. [Modules & Endpoints](#modules--endpoints)  
-9. [Authentication](#authentication)  
-10. [Database Setup](#database-setup)  
-11. [Services & Integrations](#services--integrations)  
-12. [Error Handling](#error-handling)  
-13. [Testing](#testing)  
+
+1. [Project Overview](#project-overview)
+2. [Architecture](#architecture)
+3. [Technology Stack](#technology-stack)
+4. [Project Structure](#project-structure)
+5. [Features](#features)
+6. [Getting Started](#getting-started)
+7. [Configuration](#configuration)
+8. [Modules](#modules)
+9. [Data Flow](#data-flow)
+10. [Database Setup](#database-setup)
+11. [Business Rules](#business-rules)
+12. [Error Handling](#error-handling)
+13. [Testing](#testing)
 14. [Support](#support)
 
 ---
 
 ## Project Overview
 
-This project is a full-featured Driver & Vehicle Licensing Management System that implements a **layered architecture** pattern, separating concerns into distinct layers for maintainability, testability, and scalability.
+The **DVLD System** is a full-featured desktop application built with C# and a layered architecture approach.
+It ensures clean separation between UI, business logic, and data access.
 
 ### Key Capabilities:
-- **Driver Management**: Create, update, search and maintain driver records and documents  
-- **License Management**: Issue, renew, replace and suspend licenses with category rules  
-- **Exam Scheduling**: Manage written & practical exams and record results  
-- **Application Workflow**: Submit, approve/reject, and track application lifecycle  
-- **Reporting**: View history, logs and administrative reports  
-- **Extensible Architecture**: Ready to be extended to Web API / Mobile frontends
+
+* **Applicant Management**: Full CRUD for citizens, personal info & documents
+* **License Management**: Create, renew, replace, or upgrade driving licenses
+* **Driving Tests**: Vision test, written test, and street test workflows
+* **International Licenses**: Issuing and managing international licenses
+* **Violations Tracking**: Record and manage license violations
+* **Payments & Fees**: Auto-calculated fees, renewals, replacements
+* **License History**: Records of past licenses and actions
 
 ---
 
 ## Architecture
 
-The project follows **Clean / 3-Tier Architecture** principles with the following layers:
+The project follows a **Clean, Layered Architecture** with the following layers:
 
 ### Layer Structure:
 
-1. **DVLD (Presentation Layer)**  
-   - WinForms (or WPF) UI  
-   - Forms, dialogs and UI helpers  
-   - View models / UI controllers
+#### 1. **DVLD (Presentation Layer)**
 
-2. **DVLD_Business (Business Layer)**  
-   - Business models and entities  
-   - Services and managers (DriverService, LicenseService, ExamService)  
-   - Validation and workflow rules
+* WinForms UI
+* Forms for applicants, licenses, tests, violations
+* Validations and user interaction logic
+* Calls Business Layer to perform actions
 
-3. **DVLD_DataAccess (Data Layer)**  
-   - ADO.NET helpers / Repository-style classes  
-   - SQL queries and stored procedures  
-   - Database connection/configuration
+#### 2. **DVLD_Buisness (Business Logic Layer)**
+
+* All domain logic for licenses and tests
+* Rules for eligibility
+* Handling renewals, replacements, suspensions
+* Mapping data between DAL and UI
+* Reusable service classes
+
+#### 3. **DVLD_DataAccess (Data Access Layer)**
+
+* SQL connection and execution
+* CRUD operations using ADO.NET
+* Stored procedures integration
+* Maps database results to entities
 
 ---
 
 ## Technology Stack
 
 ### Core Technologies:
-- **.NET Framework 4.x** — Application framework  
-- **C#** — Language  
-- **WinForms / WPF (optional)** — Desktop UI  
-- **SQL Server** — Primary database  
-- **ADO.NET** — Data access layer
 
-### Optional / Future Tech (when converting to web):
-- **ASP.NET Core Web API** — expose functionality as RESTful services  
-- **Entity Framework Core** — ORM alternative to ADO.NET  
-- **Redis** — caching for fast temporary storage  
-- **JWT** — authentication for APIs
+* **C# (.NET Framework / Windows Forms)**
+* **SQL Server** (Primary database)
+* **ADO.NET** for data access
+* **Layered Architecture (UI → Business → DAL)**
+
+### Additional Tools:
+
+* Stored Procedures
+* Database Views
+* Enumerations for license types & statuses
+* Logging (optional)
 
 ---
 
 ## Project Structure
 
+```
+DVLD/
+│
+├── DVLD/                     # Presentation Layer (Windows Forms)
+│   ├── Forms/                # UI Forms
+│   ├── Controls/             # User controls
+│   ├── Models/               # Form models
+│   ├── Helpers/              # UI helpers
+│   └── Program.cs            # App entry point
+│
+├── DVLD_Buisness/            # Business Layer
+│   ├── Services/             # License, Test, Applicant services
+│   ├── Logic/                # Business rules
+│   ├── Managers/             # Domain managers
+│   └── Models/               # Domain entities
+│
+└── DVLD_DataAccess/          # Data Access Layer
+    ├── Data/                 # SQL queries & stored procedures
+    ├── Repositories/         # CRUD operations
+    ├── Connection.cs         # Database connection
+    └── DTOs/                 # Data transfer objects
+```
+
 ---
 
 ## Features
 
-### 1. Driver Management
-- Add / update / delete driver profiles  
-- Attach & validate documents (ID, medical, proofs)  
-- Search by National ID, name, license number  
-- Driver history & audit trail
+### 1. Applicant Management
+
+* Add, update, or delete applicant data
+* Personal information, date of birth, national number
+* Attach required documents
 
 ### 2. License Management
-- Issue new licenses with unique license numbers  
-- Renew, replace, suspend, or revoke licenses  
-- Category-based validation (A, B, C, D, etc.)  
-- License expiry tracking & notifications (future)
 
-### 3. Exam Management
-- Schedule written & practical exams  
-- Register applicants for exams  
-- Record exam results and pass/fail logic  
-- Eligibility checks prior to scheduling
+* Issue new local driving licenses
+* Renew existing licenses
+* Replace lost/damaged licenses
+* Track active, expired, suspended licenses
+* Automatic fee calculation
 
-### 4. Application Workflow
-- Submit application types: New, Renewal, Replacement  
-- Approve / Reject workflows with comments  
-- Fee calculation & status tracking
+### 3. Driving Tests Module
 
-### 5. Reporting & Admin
-- Generate lists: active licenses, expiring licenses, failed exams  
-- Basic export (CSV/Excel) for reports  
-- Audit logs for admin actions
+* Vision Test
+* Written Test
+* Street/Practical Test
+* Manage test appointments & results
+* Enforce test dependencies (e.g., street test requires passing vision & written)
 
-### 6. Data & Storage
-- SQL Server schema with normalized tables  
-- ADO.NET-based data access for predictable control
+### 4. International Licenses
+
+* Issue international licenses for travelers
+* Check eligibility
+* Maintain international license history
+
+### 5. Violations & Penalties
+
+* Add violations to licenses
+* Suspension handling
+* Fine payments
+* Track violation history per license
+
+### 6. Payments & Receipts
+
+* Auto-generated fees
+* Printed receipts
+* Payment logs
+
+### 7. License History
+
+* Full history of issued, renewed, replaced licenses
+* View stored test results
+* View active and expired licenses
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-- **Visual Studio 2019/2022** (or VS Code for parts)  
-- **.NET Framework Developer Pack (4.x)**  
-- **SQL Server** (LocalDB, Express or full)  
-- Optional: **Git**
 
-### Installation Steps
+* **Visual Studio 2022** (recommended)
+* **SQL Server / SQL Server Express**
+* .NET Desktop Development tools
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd DVLD
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <connectionStrings>
-    <add name="DVLDConnection"
-         connectionString="Server=YOUR_SERVER;Database=DVLD_DB;Trusted_Connection=True;MultipleActiveResultSets=True;"
-         providerName="System.Data.SqlClient" />
-  </connectionStrings>
+### Steps to Run:
 
-  <appSettings>
-    <!-- Logging level, timeouts, etc. -->
-    <add key="DbCommandTimeout" value="60" />
-    <add key="AuditEnabled" value="true" />
-  </appSettings>
-</configuration>
+1. **Clone Repository**
 
+```bash
+git clone <repository-url>
+cd DVLD
+```
 
+2. **Import Database**
+
+* Restore the SQL `.bak` or run the `.sql` file
+* Ensure stored procedures & views are created
+
+3. **Update Database Connection**
+   In the DAL layer:
+
+```csharp
+public static string ConnectionString =
+    "Server=YOUR_SERVER;Database=DVLD;Trusted_Connection=True;";
+```
+
+4. **Build Solution**
+
+```
+Build → Rebuild Solution
+```
+
+5. **Run Application**
+
+```
+Start DVLD project
+```
+
+---
+
+## Configuration
+
+### Database Connection
+
+Located in:
+
+```
+DVLD_DataAccess/Connection.cs
+```
+
+### Business Rules
+
+Defined in:
+
+```
+DVLD_Buisness/Logic/
+DVLD_Buisness/Services/
+```
+
+---
+
+## Modules
+
+### 1. Applicant Module
+
+* Register new applicant
+* Edit information
+* Search by name, national ID, etc.
+
+### 2. Local Driving License Module
+
+* Issue, renew, replace
+* License class selection (Car, Bike, Truck...)
+* Fee calculation
+
+### 3. International License Module
+
+* Automated eligibility check
+* Link local license to international license
+
+### 4. Test Management Module
+
+* Scheduling
+* Result entry
+* Dynamic test availability
+
+### 5. Violations Module
+
+* Create violation
+* Attach fine
+* Update license status
+
+---
+
+## Data Flow
+
+```
+UI (Forms)
+     ↓
+Business Layer (Rules & Validation)
+     ↓
+Data Access Layer (SQL Queries)
+     ↓
+Database (Tables, SPs, Views)
+```
+
+---
+
+## Database Setup
+
+### Required Tables:
+
+* Applicants
+* LocalLicenses
+* InternationalLicenses
+* DrivingTests
+* LicenseClasses
+* Violations
+* Payments
+* TestAppointments
+
+### Stored Procedures:
+
+* Insert/Update Applicants
+* Insert/Update Licenses
+* Get License History
+* Validate Eligibility
+* Insert Test Results
+
+---
+
+## Business Rules
+
+* A user **must pass** Vision → Written → Street tests in order
+* Cannot issue license if user has unpaid fines
+* International license requires **valid local license**
+* Renewals require:
+
+  * No active violations
+  * No unpaid penalties
+  * Valid personal information
+
+---
+
+## Error Handling
+
+* UI validation for required fields
+* SQL exception handling in DAL
+* Business rules validation in BLL
+* User-friendly Windows Forms messages
+
+---
+
+## Testing
+
+### Manual Testing
+
+* Full test coverage through UI forms
+* Test scenarios:
+
+  * Issue license
+  * Fail test
+  * Renew license
+  * Replace lost license
+  * Add violation
+
+### Future Enhancements
+
+* Unit tests for BLL
+* Automated integration tests
+
+---
+
+## Support
+
+If something doesn’t work:
+
+1. Check database connection
+2. Verify stored procedures exist
+3. Confirm tables are correctly linked
+4. Contact your system administrator
+
+---
+
+If you'd like, I can also:
+
+✅ Add badges (C#, SQL Server, .NET, etc.)
+✅ Add screenshots of your UI
+✅ Add installation GIF/steps
+✅ Add a short “About the project” section
+
+Just tell me!
