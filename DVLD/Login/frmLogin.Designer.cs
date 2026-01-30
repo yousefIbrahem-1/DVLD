@@ -83,8 +83,8 @@
             // 
             // gradientPanal2
             // 
-            this.gradientPanal2.ColorBottom = System.Drawing.Color.Silver;
-            this.gradientPanal2.ColorTop = System.Drawing.Color.Black;
+            this.gradientPanal2.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gradientPanal2.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gradientPanal2.Location = new System.Drawing.Point(454, 3);
             this.gradientPanal2.Name = "gradientPanal2";
             this.gradientPanal2.Size = new System.Drawing.Size(5, 628);
@@ -99,7 +99,7 @@
             this.btn_eye.Location = new System.Drawing.Point(875, 319);
             this.btn_eye.Name = "btn_eye";
             this.btn_eye.Size = new System.Drawing.Size(34, 27);
-            this.btn_eye.TabIndex = 153;
+            this.btn_eye.TabIndex = 4;
             this.btn_eye.Tag = "0";
             this.btn_eye.UseVisualStyleBackColor = true;
             this.btn_eye.Click += new System.EventHandler(this.btn_eye_Click);
@@ -151,6 +151,7 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Image = global::DVLD.Properties.Resources.sign_in_32;
@@ -159,7 +160,7 @@
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(152, 31);
-            this.btnLogin.TabIndex = 145;
+            this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -174,7 +175,7 @@
             this.txtUserName.MaxLength = 50;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(233, 27);
-            this.txtUserName.TabIndex = 143;
+            this.txtUserName.TabIndex = 2;
             // 
             // label5
             // 
@@ -215,7 +216,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(201, 27);
-            this.txtPassword.TabIndex = 144;
+            this.txtPassword.TabIndex = 3;
             // 
             // pictureBox8
             // 

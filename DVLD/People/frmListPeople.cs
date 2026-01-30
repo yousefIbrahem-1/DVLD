@@ -73,7 +73,7 @@ namespace DVLD.People
                 dgvPeople.Columns[5].HeaderText = "Last Name";
                 dgvPeople.Columns[5].Width = 120;
 
-                dgvPeople.Columns[6].HeaderText = "Gendor";
+                dgvPeople.Columns[6].HeaderText = "Gender";
                 dgvPeople.Columns[6].Width = 120;
 
                 dgvPeople.Columns[7].HeaderText = "Date Of Birth";
@@ -128,7 +128,7 @@ namespace DVLD.People
                     FilterColumn = "CountryName";
                     break;
 
-                case "Gendor":
+                case "Gendr":
                     FilterColumn = "GendorCaption";
                     break;
 
@@ -198,7 +198,17 @@ namespace DVLD.People
 
         private void sendEmailToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Feature Is Not Implemented Yet!", "Not Ready!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //MessageBox.Show("This Feature Is Not Implemented Yet!", "Not Ready!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //     WhatsAppService.Send(
+            //"+201034377464",
+            //"Hello 👋 WhatsApp is working"
+            //);
+
+            frmSendMail frm = new frmSendMail((int)dgvPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+
+            _RefreshPeoplList();
+
 
         }
 

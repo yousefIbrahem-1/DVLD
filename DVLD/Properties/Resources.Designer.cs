@@ -263,6 +263,26 @@ namespace DVLD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_Jan_29__2026__01_27_35_PM {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image Jan 29, 2026, 01_27_35 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_Jan_29__2026__01_39_57_PM {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image Jan 29, 2026, 01_39_57 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Close_32 {
             get {
                 object obj = ResourceManager.GetObject("Close 32", resourceCulture);
@@ -496,6 +516,16 @@ namespace DVLD.Properties {
         internal static System.Drawing.Bitmap driving_licence {
             get {
                 object obj = ResourceManager.GetObject("driving-licence", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap driving_test {
+            get {
+                object obj = ResourceManager.GetObject("driving-test", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

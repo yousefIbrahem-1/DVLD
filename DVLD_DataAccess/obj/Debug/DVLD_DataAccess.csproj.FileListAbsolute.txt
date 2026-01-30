@@ -22,3 +22,9 @@ C:\Users\yoseef eprahem\source\repos\DVLD_Project\Project\DVLD_DataAccess\obj\De
 C:\Users\yoseef eprahem\source\repos\DVLD_Project\Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\yoseef eprahem\source\repos\DVLD_Project\Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
 C:\Users\yoseef eprahem\source\repos\DVLD_Project\Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb
+C:\Users\yoseef eprahem\source\repos\DVLD_project\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.dll
+C:\Users\yoseef eprahem\source\repos\DVLD_project\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.pdb
+C:\Users\yoseef eprahem\source\repos\DVLD_project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.AssemblyReference.cache
+C:\Users\yoseef eprahem\source\repos\DVLD_project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\yoseef eprahem\source\repos\DVLD_project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
+C:\Users\yoseef eprahem\source\repos\DVLD_project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb

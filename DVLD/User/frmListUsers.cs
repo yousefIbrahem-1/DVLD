@@ -231,5 +231,12 @@ namespace DVLD.User
 
 
         }
+
+        private void sendEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSendMail frm = new frmSendMail((int)dgvUsers.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
+            
+        }
     }
 }

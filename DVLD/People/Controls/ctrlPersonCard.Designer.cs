@@ -115,7 +115,7 @@
             this.llEditPersonInfo.Enabled = false;
             this.llEditPersonInfo.Location = new System.Drawing.Point(658, 37);
             this.llEditPersonInfo.Name = "llEditPersonInfo";
-            this.llEditPersonInfo.Size = new System.Drawing.Size(123, 20);
+            this.llEditPersonInfo.Size = new System.Drawing.Size(149, 25);
             this.llEditPersonInfo.TabIndex = 139;
             this.llEditPersonInfo.TabStop = true;
             this.llEditPersonInfo.Text = "Edit Person Info";
@@ -125,10 +125,10 @@
             // 
             this.lblCountry.AutoSize = true;
             this.lblCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountry.Location = new System.Drawing.Point(496, 184);
+            this.lblCountry.Location = new System.Drawing.Point(506, 184);
             this.lblCountry.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(53, 20);
+            this.lblCountry.Size = new System.Drawing.Size(68, 25);
             this.lblCountry.TabIndex = 138;
             this.lblCountry.Text = "[????]";
             // 
@@ -136,10 +136,10 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(496, 144);
+            this.lblPhone.Location = new System.Drawing.Point(506, 144);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(53, 20);
+            this.lblPhone.Size = new System.Drawing.Size(68, 25);
             this.lblPhone.TabIndex = 137;
             this.lblPhone.Text = "[????]";
             // 
@@ -147,10 +147,10 @@
             // 
             this.lblDateOfBirth.AutoSize = true;
             this.lblDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateOfBirth.Location = new System.Drawing.Point(496, 112);
+            this.lblDateOfBirth.Location = new System.Drawing.Point(506, 112);
             this.lblDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDateOfBirth.Name = "lblDateOfBirth";
-            this.lblDateOfBirth.Size = new System.Drawing.Size(53, 20);
+            this.lblDateOfBirth.Size = new System.Drawing.Size(68, 25);
             this.lblDateOfBirth.TabIndex = 136;
             this.lblDateOfBirth.Text = "[????]";
             // 
@@ -161,7 +161,7 @@
             this.lblGendor.Location = new System.Drawing.Point(156, 144);
             this.lblGendor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGendor.Name = "lblGendor";
-            this.lblGendor.Size = new System.Drawing.Size(53, 20);
+            this.lblGendor.Size = new System.Drawing.Size(68, 25);
             this.lblGendor.TabIndex = 135;
             this.lblGendor.Text = "[????]";
             // 
@@ -172,7 +172,7 @@
             this.lblAddress.Location = new System.Drawing.Point(156, 220);
             this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(53, 20);
+            this.lblAddress.Size = new System.Drawing.Size(68, 25);
             this.lblAddress.TabIndex = 134;
             this.lblAddress.Text = "[????]";
             // 
@@ -183,7 +183,7 @@
             this.lblEmail.Location = new System.Drawing.Point(156, 181);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(53, 20);
+            this.lblEmail.Size = new System.Drawing.Size(68, 25);
             this.lblEmail.TabIndex = 133;
             this.lblEmail.Text = "[????]";
             // 
@@ -194,7 +194,7 @@
             this.lblNationalNo.Location = new System.Drawing.Point(156, 107);
             this.lblNationalNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNationalNo.Name = "lblNationalNo";
-            this.lblNationalNo.Size = new System.Drawing.Size(53, 20);
+            this.lblNationalNo.Size = new System.Drawing.Size(68, 25);
             this.lblNationalNo.TabIndex = 132;
             this.lblNationalNo.Text = "[????]";
             // 
@@ -206,14 +206,14 @@
             this.lblFullName.Location = new System.Drawing.Point(156, 70);
             this.lblFullName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(59, 20);
+            this.lblFullName.Size = new System.Drawing.Size(74, 25);
             this.lblFullName.TabIndex = 131;
             this.lblFullName.Text = "[????]";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DVLD.Properties.Resources.Calendar_32;
-            this.pictureBox4.Location = new System.Drawing.Point(455, 109);
+            this.pictureBox4.Location = new System.Drawing.Point(474, 109);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -227,7 +227,7 @@
             this.label22.Location = new System.Drawing.Point(8, 37);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(99, 20);
+            this.label22.Size = new System.Drawing.Size(120, 25);
             this.label22.TabIndex = 113;
             this.label22.Text = "Person ID :";
             // 
@@ -238,9 +238,9 @@
             this.label5.Location = new System.Drawing.Point(9, 144);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 20);
+            this.label5.Size = new System.Drawing.Size(90, 25);
             this.label5.TabIndex = 129;
-            this.label5.Text = "Gendor:";
+            this.label5.Text = "Gender:";
             // 
             // lblPersonID
             // 
@@ -249,7 +249,7 @@
             this.lblPersonID.Location = new System.Drawing.Point(118, 37);
             this.lblPersonID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPersonID.Name = "lblPersonID";
-            this.lblPersonID.Size = new System.Drawing.Size(53, 20);
+            this.lblPersonID.Size = new System.Drawing.Size(68, 25);
             this.lblPersonID.TabIndex = 127;
             this.lblPersonID.Text = "[????]";
             // 
@@ -286,7 +286,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::DVLD.Properties.Resources.Country_32;
-            this.pictureBox6.Location = new System.Drawing.Point(455, 184);
+            this.pictureBox6.Location = new System.Drawing.Point(474, 184);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -316,7 +316,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVLD.Properties.Resources.Phone_32;
-            this.pictureBox2.Location = new System.Drawing.Point(454, 144);
+            this.pictureBox2.Location = new System.Drawing.Point(473, 144);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -327,10 +327,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(367, 184);
+            this.label15.Location = new System.Drawing.Point(397, 184);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(76, 20);
+            this.label15.Size = new System.Drawing.Size(95, 25);
             this.label15.TabIndex = 120;
             this.label15.Text = "Country:";
             // 
@@ -341,7 +341,7 @@
             this.label12.Location = new System.Drawing.Point(9, 220);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 20);
+            this.label12.Size = new System.Drawing.Size(99, 25);
             this.label12.TabIndex = 119;
             this.label12.Text = "Address:";
             // 
@@ -352,7 +352,7 @@
             this.label6.Location = new System.Drawing.Point(9, 181);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 20);
+            this.label6.Size = new System.Drawing.Size(72, 25);
             this.label6.TabIndex = 118;
             this.label6.Text = "Email:";
             // 
@@ -360,10 +360,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(378, 144);
+            this.label4.Location = new System.Drawing.Point(408, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 20);
+            this.label4.Size = new System.Drawing.Size(81, 25);
             this.label4.TabIndex = 117;
             this.label4.Text = "Phone:";
             // 
@@ -371,10 +371,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(323, 112);
+            this.label3.Location = new System.Drawing.Point(353, 112);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 20);
+            this.label3.Size = new System.Drawing.Size(143, 25);
             this.label3.TabIndex = 116;
             this.label3.Text = "Date Of Birth:";
             // 
@@ -385,7 +385,7 @@
             this.label2.Location = new System.Drawing.Point(9, 107);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(131, 25);
             this.label2.TabIndex = 115;
             this.label2.Text = "National No:";
             // 
@@ -396,7 +396,7 @@
             this.label1.Location = new System.Drawing.Point(9, 70);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.Size = new System.Drawing.Size(75, 25);
             this.label1.TabIndex = 114;
             this.label1.Text = "Name:";
             // 
@@ -416,7 +416,7 @@
             // 
             // ctrlPersonCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.groupBox1);

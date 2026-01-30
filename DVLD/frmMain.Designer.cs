@@ -63,9 +63,13 @@
             this.lblLoggedInUser = new System.Windows.Forms.Label();
             this.gradientPanal1 = new DVLD.GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gradientPanel1 = new DVLD.GradientPanel();
+            this.gradientPanal2 = new DVLD.GradientPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.msMainMenue.SuspendLayout();
             this.gradientPanal1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // msMainMenue
@@ -376,6 +380,9 @@
             this.gradientPanal1.ColorBottom = System.Drawing.Color.MediumTurquoise;
             this.gradientPanal1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gradientPanal1.Controls.Add(this.pictureBox1);
+            this.gradientPanal1.Controls.Add(this.gradientPanel1);
+            this.gradientPanal1.Controls.Add(this.gradientPanal2);
+            this.gradientPanal1.Controls.Add(this.pictureBox2);
             this.gradientPanal1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanal1.Location = new System.Drawing.Point(0, 72);
             this.gradientPanal1.Name = "gradientPanal1";
@@ -385,13 +392,42 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::DVLD.Properties.Resources.DL1;
-            this.pictureBox1.Location = new System.Drawing.Point(269, 84);
+            this.pictureBox1.Image = global::DVLD.Properties.Resources.driving_test;
+            this.pictureBox1.Location = new System.Drawing.Point(487, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1003, 523);
+            this.pictureBox1.Size = new System.Drawing.Size(71, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 157;
             this.pictureBox1.TabStop = false;
+            // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.gradientPanel1.Location = new System.Drawing.Point(1069, 155);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(7, 403);
+            this.gradientPanel1.TabIndex = 156;
+            // 
+            // gradientPanal2
+            // 
+            this.gradientPanal2.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.gradientPanal2.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gradientPanal2.Location = new System.Drawing.Point(471, 155);
+            this.gradientPanal2.Name = "gradientPanal2";
+            this.gradientPanal2.Size = new System.Drawing.Size(7, 403);
+            this.gradientPanal2.TabIndex = 155;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::DVLD.Properties.Resources.ChatGPT_Image_Jan_29__2026__01_27_35_PM;
+            this.pictureBox2.Location = new System.Drawing.Point(471, 155);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(605, 404);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 143;
+            this.pictureBox2.TabStop = false;
             // 
             // frmMain
             // 
@@ -419,6 +455,7 @@
             this.msMainMenue.PerformLayout();
             this.gradientPanal1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,6 +496,9 @@
         private System.Windows.Forms.ToolStripMenuItem releaseDetainedLicenseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ManageDetainedLicensestoolStripMenuItem1;
         private GradientPanel gradientPanal1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private GradientPanel gradientPanal2;
+        private GradientPanel gradientPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

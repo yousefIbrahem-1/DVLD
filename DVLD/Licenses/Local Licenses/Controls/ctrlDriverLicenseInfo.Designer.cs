@@ -326,13 +326,13 @@
             this.lblDateOfBirth.TabIndex = 136;
             this.lblDateOfBirth.Text = "[????]";
             // 
-            // lblGendor
+            // lblGender
             // 
             this.lblGendor.AutoSize = true;
             this.lblGendor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGendor.Location = new System.Drawing.Point(180, 180);
             this.lblGendor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblGendor.Name = "lblGendor";
+            this.lblGendor.Name = "lblGender";
             this.lblGendor.Size = new System.Drawing.Size(53, 20);
             this.lblGendor.TabIndex = 135;
             this.lblGendor.Text = "[????]";
@@ -401,7 +401,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 129;
-            this.label5.Text = "Gendor:";
+            this.label5.Text = "Gender:";
             // 
             // lblLicenseID
             // 
