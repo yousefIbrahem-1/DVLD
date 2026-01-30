@@ -165,6 +165,68 @@ DVLD/
 * View stored test results
 * View active and expired licenses
 
+### 8. Email Notification System ✅
+
+The Email Notification System was introduced to enhance communication between the system and applicants.  
+It ensures that users are automatically informed about important actions and updates related to their licenses and tests.
+
+#### Key Capabilities
+
+- *Automatic Email Sending** for major system events, including:
+  - Driving license issuance
+  - Driving license renewal
+  - Driving test results (pass / fail)
+  - Violations and penalties notifications
+
+- *SMTP-Based Email Service**
+  - Uses SMTP protocol for reliable email delivery
+  - Supports Gmail and other SMTP providers
+
+- *Configurable Sender Email**
+  - Sender email and credentials can be configured in the application configuration file
+  - Supports App Passwords for secure authentication
+
+- *User-Friendly Email Messages**
+  - Clear and professional email content
+  - Includes important details such as applicant name, license information, and action status
+
+#### Benefits
+
+- Improves user communication
+- Reduces manual follow-up
+- Enhances system professionalism and usability
+
+---
+
+### 9. Updated UI Design 
+
+The User Interface (UI) was redesigned to improve usability, clarity, and overall user experience.
+
+#### UI Improvements
+
+- *Improved Layout and Spacing**
+  - Cleaner forms with better alignment
+  - Reduced visual clutter
+
+- *Clear Navigation Between Modules**
+  - Easier movement between applicants, licenses, tests, and violations
+  - Logical grouping of related functionalities
+
+- *Enhanced Form Validation Feedback**
+  - Clear validation messages for required fields
+  - Better error indication for incorrect inputs
+
+- *Enhanced User Experience**
+  - More intuitive workflow
+  - Faster interaction with system features
+  - Improved readability and consistency across forms
+
+#### Impact
+
+- Increases productivity for system users
+- Reduces user errors
+- Provides a more modern and professional desktop application experience
+
 ---
 
 ## Getting Started
